@@ -10,3 +10,7 @@ resource "docker_container" "webserver" {
     external = 3000
   }
 }
+
+output "web_server_port" {
+  value = docker_container.webserver.ports[0].external
+}
