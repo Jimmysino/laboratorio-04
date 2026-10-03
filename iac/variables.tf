@@ -7,3 +7,8 @@ variable "api_server_port" {
   description = "The port on which the api server is exposed"
   type        = map(number)
 }
+
+variable "bd_port" {
+  description = "The port on which the database is exposed"
+  type        = map(number)
+}
